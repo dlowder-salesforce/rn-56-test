@@ -4,6 +4,10 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
+	"bundle_ios_dev": "node node_modules/react-native/local-cli/cli.js bundle --entry-file index.js --platform ios --dev true --bundle-output Test56.ios.jsbundle",
+	"bundle_ios": "node node_modules/react-native/local-cli/cli.js bundle --entry-file index.js --platform ios --dev false --bundle-output Test56.ios.jsbundle",
+	"bundle_android_dev": "node node_modules/react-native/local-cli/cli.js bundle --entry-file index.js --platform android --dev true --bundle-output Test56.android.jsbundle",
+	"bundle_android": "node node_modules/react-native/local-cli/cli.js bundle --entry-file index.js --platform android --dev false --bundle-output Test56.android.jsbundle",
     "test": "jest"
   },
   "dependencies": {
